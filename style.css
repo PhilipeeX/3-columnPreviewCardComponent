@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Deca', 'Big Shoulders Display';
+    background-color: var(--Very-light-gray-background-headings-buttons);
+}
+@media only screen and (max-width: 980px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin: 2rem 0;
+    }
+    .container section {
+        padding: 3rem 3rem;
+    }
+    img {
+        margin-bottom: 1.5rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-family: 'Big Shoulders Display';
+        margin-bottom: 1.5rem;
+        color: var(--Very-light-gray-background-headings-buttons);
+    }
+    p {
+        color: var(--Transparent-white-paragraphs);
+        line-height: 1.7rem;
+        margin-bottom: 1.5rem;
+        font-size: 15px;
+        text-align:left;
+    }
+    .sedans {
+        border-radius: .5rem .5rem 0 0;
+        background-color: var(--Bright-orange);
+    }
+    .sedans button {
+        color: var(--Bright-orange);
+    }
+    button {
+        border: none;
+        background-color: var(--Very-light-gray-background-headings-buttons);
+        padding: 1rem 2.5rem;
+        border-radius: 2rem;
+        font-family: 'Lexend Deca';
+    }
+    .suvs {
+        background-color: var(--Dark-cyan);
+    }
+    .suvs button {
+        color: var(--Dark-cyan);
+    }
+    .luxury {
+        border-radius: 0 0 .5rem .5rem;
+        background-color: var(--Very-dark-cyan);
+    }
+    .luxury button {
+        color: var(--Very-dark-cyan);
+    }
+}
